@@ -1,0 +1,10 @@
+{
+    "Name":"Michael Weaver",
+    "Shift": {
+        "Monday": [[12,18]],
+        "Tuesday": [[12,17]],
+        "Wednesday": [[10,17]],
+        "Thursday": [[9,17]],
+        "Friday": [[12,18]]
+    }
+}

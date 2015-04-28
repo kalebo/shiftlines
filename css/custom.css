@@ -1,0 +1,41 @@
+.header {
+
+    background: none repeat scroll 0% 0% #EEE;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    hight: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+
+}
+.daily {
+    margin-left: 2em;
+}
+
+.shift {
+    display: table-cell;
+}
+td{
+    width:9px;
+    line-height: 0px;
+}
+
+#worker1 {
+    background: #89601B;
+}
+#worker2 {
+    background: #EABD70;
+}
+#worker3 {
+    background: #FE6410;
+}
+#worker4 {
+    background: #094C37;
+}
+#worker5 {
+    background: #5CCC89;
+}

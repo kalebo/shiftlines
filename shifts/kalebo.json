@@ -1,0 +1,10 @@
+{
+    "Name":"Kaleb Olson",
+    "Shift": {
+        "Monday": [[10,17]],
+        "Tuesday": [[10,17]],
+        "Wednesday": [[9,17]],
+        "Thursday": [[9,12], [13,17]],
+        "Friday": [[9,16]]
+    }
+}
