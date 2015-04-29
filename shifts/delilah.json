@@ -1,10 +1,10 @@
 {
     "Name":"Delilah the Duck",
     "Shift": {
-        "Monday": [[12,13]],
-        "Tuesday": [[12,14]],
-        "Wednesday": [[12,17]],
-        "Thursday": [[8,17]],
-        "Friday": [[12,18]]
+        "Monday": [[10,12],[13,16]],
+        "Tuesday": [[8,13]],
+        "Wednesday": [[10,12],[13,16]],
+        "Thursday": [[8,13]],
+        "Friday": [[10,12],[13,18]]
     }
 }

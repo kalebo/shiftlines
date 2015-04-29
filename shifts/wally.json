@@ -3,8 +3,8 @@
     "Shift": {
         "Monday": [[12,17]],
         "Tuesday": [[14,17]],
-        "Wednesday": [[13,17]],
+        "Wednesday": [[12,17]],
         "Thursday": [[14,17]],
-        "Friday": [[14,18]]
+        "Friday": [[12,18]]
     }
 }

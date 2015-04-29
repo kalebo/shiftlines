@@ -2,9 +2,9 @@
     "Name":"Beorn the Bear",
     "Shift": {
         "Monday": [[12,18]],
-        "Tuesday": [[12,17]],
-        "Wednesday": [[10,17]],
-        "Thursday": [[9,17]],
+        "Tuesday": [[9,15]],
+        "Wednesday": [[12,17]],
+        "Thursday": [[9,15]],
         "Friday": [[12,18]]
     }
 }

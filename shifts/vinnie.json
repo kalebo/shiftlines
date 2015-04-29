@@ -1,10 +1,10 @@
 {
     "Name":"Vinnie the Vulture",
     "Shift": {
-        "Monday": [[9,17]],
-        "Tuesday": [[12,14]],
-        "Wednesday": [[13,14]],
-        "Thursday": [[9,17]],
-        "Friday": [[14,15]]
+        "Monday": [[10,15]],
+        "Tuesday": [[10,12],[15,17]],
+        "Wednesday": [[10,15]],
+        "Thursday": [[10,12],[15,17]],
+        "Friday": [[10,15]]
     }
 }
