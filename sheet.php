@@ -173,7 +173,7 @@ foreach($usershifts as $username => $days){
 <?php
                 $id = 1;
                 foreach($usernames as $user){
-                    echo "<table><tr><td id='worker$id'/><td style='width:200px'>$user</td></tr></table>";
+                    echo "<table><tr><td id='worker$id'/><td class='name' style='width:200px'>$user</td></tr></table>";
                     $id++;
                 }
 ?>

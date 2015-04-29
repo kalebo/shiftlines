@@ -1,5 +1,6 @@
 .header {
 
+    -webkit-print-color-adjust: exact;
     background: none repeat scroll 0% 0% #EEE;
     text-align: center;
     border-radius: 4px;
@@ -23,6 +24,9 @@ td{
     width:9px;
     line-height: 0px;
     -webkit-print-color-adjust: exact;
+}
+td.name{
+    font-size: 1.3rem;
 }
 
 #worker1 {
