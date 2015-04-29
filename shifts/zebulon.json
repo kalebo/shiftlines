@@ -1,7 +1,7 @@
 {
     "Name":"Zeb the Zebra",
     "Shift": {
-        "Monday": [[8,12]],
+        "Monday": [[8,12.5]],
         "Tuesday": [[8,13]],
         "Wednesday": [[8,12]],
         "Thursday": [[8,13]],

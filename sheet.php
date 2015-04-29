@@ -1,7 +1,7 @@
 <?php
 // Set the desired constants for when the office opens
 // and closes and how many periods should be shown per hour  (PPH).
-define('PPH', 1);
+define('PPH', 2);
 define('START', 8); 
 define('END', 17);
 
@@ -17,7 +17,7 @@ $shifttables = array(); // array[name] -> array[day] -> htmltable
  * @return an array of 1s and 0s matching the number of periods a worker will working during the day
 */
 function maphours($hours, $pph, $start, $end){
-    $buffer = array_fill(0, $end - $start, 0);
+    $buffer = array_fill(0, ($end - $start)*$pph, 0);
     foreach($hours as $period){
         if ($period[0] < $start) $period[0] = $start;
         if ($period[1] > $end) $period[1] = $end;
