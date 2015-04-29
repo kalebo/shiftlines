@@ -100,7 +100,7 @@ foreach($usershifts as $username => $days){
                 <div class="header" style="background:none" ></br></div>
                     <table>
                       <?php
-                         for ($hour = START; $hour <=END; $hour+= 1/PPH){
+                         for ($hour = START; $hour <END; $hour+= 1/PPH){
                             if (fmod($hour, 1) == 0 ){
                                 echo "<tr><td>{$hour}h00</td></tr>";
                             }
