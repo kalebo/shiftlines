@@ -11,10 +11,22 @@
     line-height: 30px;
     font-weight: 600;
     letter-spacing: 0.1rem;
+    overflow: hidden
+    text-overflow: ellipsis
+
 
 }
+
+td.crop {
+    max-width: 0;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
 .daily {
-    margin-left: 1.5em;
+    margin-right: auto;
+    margin-left: 1rem;
 }
 
 .shift {
@@ -25,7 +37,7 @@ td{
     line-height: 0px;
     -webkit-print-color-adjust: exact;
 }
-td.name{
+.name{
     font-size: 1.3rem;
 }
 
@@ -43,4 +55,10 @@ td.name{
 }
 #worker5 {
     background: #5CCC89;
+}
+#worker6 {
+    background: #674d67;
+}
+#worker7 {
+    background: #BDBE25;
 }

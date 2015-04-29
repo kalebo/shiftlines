@@ -1,0 +1,10 @@
+{
+    "Name":"Vinnie the Vulture",
+    "Shift": {
+        "Monday": [[9,17]],
+        "Tuesday": [[12,14]],
+        "Wednesday": [[13,14]],
+        "Thursday": [[9,17]],
+        "Friday": [[14,15]]
+    }
+}
