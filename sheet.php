@@ -138,7 +138,7 @@ foreach($usershifts as $username => $days){
                 </div>
 
                 <div class="two columns">
-                <div class="header" >Tuesday</div>
+                <div class="header crop" >Tuesday</div>
                     <div class="container daily" style="text-transform:none">
                     <?php
                         foreach($shifttables as $user){
@@ -149,7 +149,7 @@ foreach($usershifts as $username => $days){
                 </div>
 
                 <div class="two columns">
-                <div class="header" >Wednesday</div>
+                <div class="header crop" >Wednesday</div>
                     <div class="container daily" style="text-transform:none">
                     <?php
                         foreach($shifttables as $user){
@@ -159,7 +159,7 @@ foreach($usershifts as $username => $days){
                     </div>
                 </div>
                 <div class="two columns">
-                <div class="header" >Thursday</div>
+                <div class="header crop" >Thursday</div>
                     <div class="container daily" style="text-transform:none">
                     <?php
                         foreach($shifttables as $user){
@@ -169,7 +169,7 @@ foreach($usershifts as $username => $days){
                     </div>
                 </div>
                 <div class="two columns">
-                <div class="header" >Friday</div>
+                <div class="header crop" >Friday</div>
                     <div class="container daily" style="text-transform:none">
                     <?php
                         foreach($shifttables as $user){

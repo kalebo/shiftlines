@@ -17,8 +17,7 @@
 
 }
 
-td.crop {
-    max-width: 0;
+.crop {
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
@@ -37,7 +36,8 @@ td{
     line-height: 0px;
     -webkit-print-color-adjust: exact;
 }
-.name{
+td.name{
+    max-width: 0;
     font-size: 1.3rem;
 }
 
