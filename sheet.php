@@ -18,20 +18,21 @@ function maphours($hours, $pph, $start, $end){
             }
         }
     }
+    return $buffer;
 }
 
 function array2table($input, $id){
     $output = "";
-    $output += "<table class=\"shift\" >";
-    foreach($input as $period){
-        if ($input == 1){
-            $output += "<tr><td id=\"worker$id\"/></tr>";
+    $output = $output . "<table class=\"shift\" >";
+    foreach($input as $moment){
+        if ($moment == 1){
+            $output = $output . "<tr><td id=\"worker$id\"/></tr>";
         }
         else {
-            $output += "<tr><td/></tr>";
+            $output = $output . "<tr><td/></tr>";
         }
     }
-    $output += "</table>";
+    $output = $output . "</table>";
     return $output;
 }
 
@@ -45,8 +46,12 @@ foreach($shiftfiles as $file){
     $usershifts[$jsonobj["Name"]] = $jsonobj["Shift"];
 }
 
+$id = 1;
 foreach($usershifts as $username => $days){
-    
+    foreach($days as $day => $hours){
+        $shifttables[$username][$day] = array2table(maphours($hours, PPH, START, END), $id );
+    }
+    $id++;
 }
 
 ?>
@@ -111,82 +116,54 @@ foreach($usershifts as $username => $days){
                 <div class="two columns">
                 <div class="header" >Monday</div>
                     <div class="container daily" style="text-transform:none"> 
-                    <table class="shift" >
-                        <tr><td id="worker1"/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker1"/></tr>
-                        <tr><td id="worker1"/></tr>
-                        <tr><td id="worker1"/></tr>
-                        <tr><td id="worker1"/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker1"/></tr>
-                        <tr><td id="worker1"/></tr>
-                    </table>
-                    <table class="shift" >
-                        <tr><td id="worker2"/></tr>
-                        <tr><td id="worker2"/></tr>
-                        <tr><td id="worker2"/></tr>
-                        <tr><td id="worker2"/></tr>
-                        <tr><td id="worker2"/></tr>
-                        <tr><td id="worker2"/></tr>
-                        <tr><td/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker2"/></tr>
-                    </table>
-                    <table class="shift" >
-                        <tr><td/></tr>    
-                        <tr><td/></tr>    
-                        <tr><td id="worker3"/></tr>
-                        <tr><td id="worker3"/></tr>
-                        <tr><td/></tr>    
-                        <tr><td id="worker3"/></tr>
-                        <tr><td id="worker3"/></tr>
-                        <tr><td id="worker3"/></tr>
-                        <tr><td/></tr>    
-                        <tr><td id="worker3"/></tr>
-                    </table>
-                    <table class="shift" >
-                        <tr><td id="worker4"/></tr>
-                        <tr><td id="worker4"/></tr>
-                        <tr><td id="worker4"/></tr>
-                        <tr><td/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker4"/></tr>
-                        <tr><td id="worker4"/></tr>
-                        <tr><td id="worker4"/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker4"/></tr>
-                    </table>
-                    <table class="shift" >
-                        <tr><td id="worker5"/></tr>
-                        <tr><td id="worker5"/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker5"/></tr>
-                        <tr><td id="worker5"/></tr>
-                        <tr><td id="worker5"/></tr>
-                        <tr><td id="worker5"/></tr>
-                        <tr><td/></tr>
-                        <tr><td id="worker5"/></tr>
-                        <tr><td id="worker5"/></tr>
-                    </table>
-                        </div>
+                    <?php
+                        foreach($shifttables as $user){
+                            echo $user["Monday"];
+                        }
+                    ?>
                     </div>
+                </div>
 
                 <div class="two columns">
                 <div class="header" >Tuesday</div>
                     <div class="container daily" style="text-transform:none">
-       <?php
-       ?>
+                    <?php
+                        foreach($shifttables as $user){
+                            echo $user["Tuesday"];
+                        }
+                    ?>
+                    </div>
+                </div>
+
+                <div class="two columns">
+                <div class="header" >Wednesday</div>
+                    <div class="container daily" style="text-transform:none">
+                    <?php
+                        foreach($shifttables as $user){
+                            echo $user["Wednesday"];
+                        }
+                    ?>
                     </div>
                 </div>
                 <div class="two columns">
-                <div class="header" >Wednesday</div>
-                </div>
-                <div class="two columns">
                 <div class="header" >Thursday</div>
+                    <div class="container daily" style="text-transform:none">
+                    <?php
+                        foreach($shifttables as $user){
+                            echo $user["Thursday"];
+                        }
+                    ?>
+                    </div>
                 </div>
                 <div class="two columns">
                 <div class="header" >Friday</div>
+                    <div class="container daily" style="text-transform:none">
+                    <?php
+                        foreach($shifttables as $user){
+                            echo $user["Friday"];
+                        }
+                    ?>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,7 +171,7 @@ foreach($usershifts as $username => $days){
         <div class="row" id="status">
             <p> <?php
         foreach($usernames as $user){echo "$user,";}
-        print_r($usershifts);?> is in the office now. </p>
+?> is in the office now. </p>
 
         </div>
 
