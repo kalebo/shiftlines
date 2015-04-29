@@ -93,7 +93,7 @@ foreach($usershifts as $username => $days){
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="container" style="margin-top: 15%">
-        <h4>Shift Scheduals</h4>
+        <h4>Shift Schedules</h4>
         <section class="matrix">
         <div class="row">
                 <div class="one columns">
