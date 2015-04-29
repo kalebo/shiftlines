@@ -169,9 +169,15 @@ foreach($usershifts as $username => $days){
         </section>
       </div>
         <div class="row" id="status">
-            <p> <?php
-        foreach($usernames as $user){echo "$user,";}
-?> is in the office now. </p>
+                                 <div class="offset-by-two eight columns ">
+<?php
+                $id = 1;
+                foreach($usernames as $user){
+                    echo "<table><tr><td id='worker$id'/><td style='width:200px'>$user</td></tr></table>";
+                    $id++;
+                }
+?>
+                                 </div>
 
         </div>
 

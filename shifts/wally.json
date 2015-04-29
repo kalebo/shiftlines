@@ -1,0 +1,10 @@
+{
+    "Name":"Wally the Whale",
+    "Shift": {
+        "Monday": [[12,17]],
+        "Tuesday": [[14,17]],
+        "Wednesday": [[13,17]],
+        "Thursday": [[14,17]],
+        "Friday": [[14,18]]
+    }
+}

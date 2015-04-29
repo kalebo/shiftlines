@@ -1,0 +1,10 @@
+{
+    "Name":"Magnus the Midget",
+    "Shift": {
+        "Monday": [[8,12],[13,15]],
+        "Tuesday": [[8,12],[13,15]],
+        "Wednesday": [[12,14]],
+        "Thursday": [[14,16]],
+        "Friday": [[8,12],[13,15]]
+    }
+}

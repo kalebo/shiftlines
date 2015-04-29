@@ -1,0 +1,10 @@
+{
+    "Name":"Minnie the Moocher",
+    "Shift": {
+        "Monday": [[12,13]],
+        "Tuesday": [[12,14]],
+        "Wednesday": [[12,17]],
+        "Thursday": [[8,17]],
+        "Friday": [[12,18]]
+    }
+}
