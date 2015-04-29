@@ -115,7 +115,7 @@ foreach($usershifts as $username => $days){
                       <?php
                          for ($hour = START; $hour <END; $hour+= 1/PPH){
                             if (fmod($hour, 1) == 0 ){
-                                echo "<tr><td>{$hour}h00</td></tr>";
+                                echo "<tr><td style='text-align:right'>{$hour}h00</td></tr>";
                             }
                             else {
                                 echo "<tr><td></td></tr>";
