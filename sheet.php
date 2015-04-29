@@ -1,7 +1,7 @@
 <?php
 // Set the desired constants for when the office opens
 // and closes and how many periods should be shown per hour  (PPH).
-define('PPH', 2);
+define('PPH', 1);
 define('START', 8); 
 define('END', 17);
 
@@ -77,7 +77,7 @@ foreach($usershifts as $username => $days){
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>CSR Shift Scheduals</title>
+  <title>Shift Schedules</title>
   <meta name="description" content="">
   <meta name="author" content="">
 

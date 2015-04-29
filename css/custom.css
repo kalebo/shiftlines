@@ -32,7 +32,7 @@
     display: table-cell;
 }
 td{
-    width:9px;
+    width:11px;
     line-height: 0px;
     -webkit-print-color-adjust: exact;
 }
