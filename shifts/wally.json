@@ -1,5 +1,6 @@
 {
     "Name":"Wally the Whale",
+    "Phone":"123-123-4321",
     "Shift": {
         "Monday": [[12,17]],
         "Tuesday": [[14,17]],
